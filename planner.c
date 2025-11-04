@@ -30,3 +30,26 @@ void read(struct planner* p, int n) {
         scanf(" %[^\n]", p[i].activity); 
     }
 }
+void display(struct planner* p, int n) {
+    printf("\n=== Weekly Planner ===\n");
+    printf("%-12s %-8s %-12s\n", "Day", "Date", "Activity");
+    for (int i = 0; i < n; i++) {
+        printf("%-12s %-8d %-12s\n", p[i].day, p[i].date, p[i].activity);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
