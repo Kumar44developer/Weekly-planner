@@ -16,3 +16,17 @@ struct planner* create(int n) {
     return p;
 }
 
+void read(struct planner* p, int n) {
+    printf("Enter the details of each day:\n");
+    for (int i = 0; i < n; i++) {
+        printf("\nDay %d\n", i + 1);
+        printf("Enter day name: ");
+        scanf("%s", p[i].day);
+
+        printf("Enter date (numeric): ");
+        scanf("%d", &p[i].date);
+
+        printf("Enter activity: ");
+        scanf(" %[^\n]", p[i].activity); 
+    }
+}
