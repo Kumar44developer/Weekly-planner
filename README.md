@@ -36,8 +36,8 @@ Managing daily tasks requires a clean structure to store day names, calendar dat
 
 ```
 Weekly-planner/
-├── planner.c        # Source code (structure definition, memory management, CLI logic)
-└── README.md        # Project documentation
+├── planner.c       
+└── README.md      
 ```
 
 ---
